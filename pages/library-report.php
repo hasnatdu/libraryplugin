@@ -24,6 +24,8 @@ $wpdb->prepare("SELECT * FROM wp_lib_documents", ""),ARRAY_A );?>
       <th scope="col">key_word</th>
       <th scope="col">clssification_no</th>
       <th scope="col">Status</th>
+      <th scope="col">created_by</th>
+      <th scope="col">created_at</th>
     </tr>
   </thead>	
 
@@ -47,7 +49,9 @@ $wpdb->prepare("SELECT * FROM wp_lib_documents", ""),ARRAY_A );?>
 			<td><?php echo $value['isbn_issn']?></td>
 			<td><?php echo $value['key_word']?></td>
 			<td><?php echo $value['clssification_no']?></td>
-			<td><?php echo $value['Status']?></td>	
+			<td><?php echo $value['Status']?></td>
+			<td><?php echo $value['created_by']?></td>
+			<td><?php echo $value['created_at']?></td>		
 		</tr>
 	<?php } ?>
   </tbody>
